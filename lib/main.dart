@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/data/data.dart';
-import './board/board.dart';
+import './board/grid_board.dart';
 import 'package:provider/provider.dart';
 
 void main() {

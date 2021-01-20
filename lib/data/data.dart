@@ -17,7 +17,7 @@ class BoardRepresentation with ChangeNotifier {
     'black': 'b',
   };
 
-  final columnrep = {
+  final columnRepresentation = {
     'A': 0,
     'B': 1,
     'C': 2,
@@ -27,7 +27,7 @@ class BoardRepresentation with ChangeNotifier {
     'G': 6,
     'H': 7,
   };
-  final rowrep = {
+  final rowRepresentation = {
     '1': 0,
     '2': 1,
     '3': 2,
@@ -40,16 +40,16 @@ class BoardRepresentation with ChangeNotifier {
 
   var matrix = List.generate(8, (index) => List(8), growable: false);
 
-  void initialsetup() {
+  void initialSetup() {
     matrix = List.generate(8, (index) => List(8), growable: false);
-    matrix[rowrep['1']][columnrep['H']] = 'WK';
-    matrix[rowrep['1']][columnrep['A']] = 'WQ';
-    matrix[rowrep['2']][columnrep['G']] = 'WP';
-    matrix[rowrep['2']][columnrep['H']] = 'WP';
-    matrix[rowrep['5']][columnrep['E']] = 'BK';
-    matrix[rowrep['4']][columnrep['E']] = 'BP';
-    matrix[rowrep['4']][columnrep['F']] = 'BP';
-    matrix[rowrep['3']][columnrep['B']] = 'BH';
+    matrix[rowRepresentation['1']][columnRepresentation['H']] = 'WK';
+    matrix[rowRepresentation['1']][columnRepresentation['A']] = 'WQ';
+    matrix[rowRepresentation['2']][columnRepresentation['G']] = 'WP';
+    matrix[rowRepresentation['2']][columnRepresentation['H']] = 'WP';
+    matrix[rowRepresentation['5']][columnRepresentation['E']] = 'BK';
+    matrix[rowRepresentation['4']][columnRepresentation['E']] = 'BP';
+    matrix[rowRepresentation['4']][columnRepresentation['F']] = 'BP';
+    matrix[rowRepresentation['3']][columnRepresentation['B']] = 'BH';
   }
 
   void movePawnMatrix(int x, int y) {
